@@ -1,9 +1,8 @@
-/*jshint globalstrict: true*/
-'use strict';
+var angular = require('angular');
 
 // declare a new module called 'myApp', and make it require the `ng-admin` module as a dependency
 var myApp = angular.module('myApp', [
-    'ng-admin'
+    require('ng-admin')
 ]);
 
 myApp.config(['RestangularProvider', function(RestangularProvider) {
