@@ -4,11 +4,11 @@ var path = require('path');
 
 module.exports = {
     entry: [
-        './js/app.js',
-        './css/app.scss',
+        path.join(__dirname, "js", "app.js"),
+        path.join(__dirname, "css", "app.scss")
     ],
     output: {
-        path: __dirname + "/docs",
+        path: path.join(__dirname, "docs"),
         filename: "app.js",
     },
     module: {
